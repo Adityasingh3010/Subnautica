@@ -7,16 +7,23 @@
     background-color:#0e2835;
 }
 
-.nav-link{
-    color:#fff
+.nav-lin{
+    color:#fff;
+    font-size:20px;
+    padding: 33px 20px 0px 9px;
 }
 
-.nav-link:hover{
+.nav-lin:hover{
     color:#fff
 }
 
 .btn-outline-success {
     color: #ffffff;
     border-color: #174f65a3;
+}
+
+.icon{
+    color: #0e2835;
+    background-color: #fff;
 }
 /* Navbar End */
