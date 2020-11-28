@@ -1,3 +1,114 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #273367;
+
+}
+
+.games-main,.container-fluid .main{
+    width: 75%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+}
+
+
+.main{
+    display: flex;
+}
+
+.right{
+    width: 50%;
+    padding: 4% 0px 0px 8%;
+    color: rgb(253, 253, 255);
+}
+
+.header{
+    margin: 15% 0px 15% 0px;
+}
+
+.subtitle{
+    font-size: 23px;
+}
+
+#nav{
+    background-color: #273367;
+}
+
+.left{
+    width: 50%;
+    margin:auto 0;
+}
+
+.gaming-img{
+    display: block;
+    width: 100%;
+}
+
+#xplore{
+    font-size: 25px;
+    border: 2px solid black;
+    color: white;
+}
+
+#xplore:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+/* Recommended games */
+
+#reccomended{
+    height: 100vh;
+}
+
+.games-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card,.list-group-item{
+    color: white;
+    background-color: rgb(29, 26, 41);
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    box-shadow: 0 0 5px 2px rgb(15, 183, 235);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+@media all and (max-width:648px){
+    .container-fluid .main{
+        width: 100%;
+        height: 85%;
+        margin: 0 auto;
+        border: 2px solid black;
+    }
+}
 /* Navbar Start */
 .image-logo{
     width:100px;
