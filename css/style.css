@@ -109,3 +109,21 @@ html{
         border: 2px solid black;
     }
 }
+/* Navbar Start */
+.image-logo{
+    width:100px;
+}
+
+.navbar{
+    background-color:#0e2835;
+}
+
+.nav-link{
+    color:#fff
+}
+
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #174f65a3;
+}
+/* Navbar End */
