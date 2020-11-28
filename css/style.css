@@ -1,4 +1,71 @@
-/* Navbar Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #273367;
+}
+
+.container-fluid .main{
+    width: 75%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+}
 
 
-/* Navbar End */
+.main{
+    display: flex;
+}
+
+.right{
+    width: 50%;
+    padding: 4% 0px 0px 8%;
+    color: rgb(253, 253, 255);
+}
+
+.header{
+    margin: 15% 0px 15% 0px;
+}
+
+.subtitle{
+    font-size: 23px;
+}
+
+#nav{
+    background-color: #273367;
+}
+
+.left{
+    width: 50%;
+    margin:auto 0;
+}
+
+.gaming-img{
+    display: block;
+    width: 100%;
+}
+
+#xplore{
+    font-size: 20px;
+    
+}
+
+@media all and (max-width:648px){
+    .container-fluid .main{
+        width: 100%;
+        height: 85%;
+        margin: 0 auto;
+        border: 2px solid black;
+    }
+}
