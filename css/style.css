@@ -1,7 +1,71 @@
 
+/* Navbar Start */
+.image-logo{
+    width:100px;
+}
+
+.navbar{
+    background-color:#0e2835;
+}
+
+.nav-lin{
+    color:#fff;
+    font-size:20px;
+    padding: 33px 20px 0px 9px;
+}
+
+.nav-lin:hover{
+    color:#fff
+}
+
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #174f65a3;
+}
+
+.icon{
+    color: #0e2835;
+    background-color: #fff;
+}
+/* Navbar End */
+
+/* Navbar Start */
+.image-logo{
+    width:100px;
+}
+
+.navbar{
+    background-color:#0e2835;
+}
+
+.nav-lin{
+    color:#fff;
+    font-size:20px;
+    padding: 33px 20px 0px 9px;
+}
+
+.nav-lin:hover{
+    color:#fff
+}
+
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #174f65a3;
+}
+
+.icon{
+    color: #0e2835;
+    background-color: #fff;
+}
+/* Navbar End */
+
+
+
 html{
     scroll-behavior: smooth;
 }
+
+
 
 
 
@@ -12,6 +76,7 @@ html{
 }
 
 .container-fluid{
+
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +86,16 @@ html{
 
 }
 
+.banner-home{
+    padding: 87px 6px 190px 6px;
+}
+
+.games-main{
+
+}
+
 .games-main,.container-fluid .main{
+
     width: 75%;
     height: 80%;
     margin: 0 auto;
@@ -29,6 +103,10 @@ html{
 
 .header{
     text-align: center;
+
+    margin: 15% 0% 15% 0%;
+    color: #fff;
+
 }
 
 
@@ -44,20 +122,26 @@ html{
 
 .header{
     margin: 15% 0px 15% 0px;
+
 }
 
 .subtitle{
     font-size: 23px;
+
+    color: #fff;
+
 }
 
 #nav{
     background-color: #273367;
 }
 
+
 .left{
     width: 50%;
     margin:auto 0;
 }
+
 
 .gaming-img{
     display: block;
@@ -78,9 +162,11 @@ html{
 
 /* Recommended games */
 
+
 #reccomended{
     height: 100vh;
 }
+
 
 .games-main{
     display: flex;
@@ -99,6 +185,34 @@ html{
     box-shadow: 0 0 5px 2px rgb(15, 183, 235);
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+
+.game{
+    margin-bottom: 12px;
+}
+
+.head-recommend{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.see-more-rec{
+    float: right;
+    background-color:#000 ;
+    font-size: 25px;
+    border: 2px solid black;
+    color: white;
+}
+
+
+@media all and (max-width:648px){
+    .container-fluid .main{
+        width: 100%;
+        margin: 0 auto;
+        border: 2px solid black;
+    }
 }
 
 @media all and (max-width:648px){
@@ -127,3 +241,4 @@ html{
     border-color: #174f65a3;
 }
 /* Navbar End */
+
