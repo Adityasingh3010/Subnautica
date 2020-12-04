@@ -73,10 +73,12 @@ html{
     width: 100%;
 }
 
-.see-more-rec,#xplore{
+.see-more-rec,#
+{
     font-size: 25px;
     border: 2px solid black;
     color: white;
+    
 }
 
 #xplore:hover{
@@ -121,6 +123,7 @@ html{
     font-size: 25px;
     border: 2px solid black;
     color: white;
+    margin-bottom: 17px;
 }
 /* Home Page Ends */
 
@@ -180,46 +183,23 @@ html{
       color:#fff
   }
   /*Flipcard ends here*/
-  /* Game Page ends Here */
 
-  .game-form{
-    display:none;
-    margin-top: 200px;  
-    }
-
-#error-log{
-    display: none;
+  .footer {
     text-align: center;
-    }
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    overflow-x: hidden;
+background-color: #09071d;
+}
 
-.btn-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    }
-
-.user-cart{
-    margin-top: 200px;
-    }
-
-.user-reciept{
-    display: none;
-    }
-
-.footer {
-        text-align: center;
-        width: 100%;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        overflow-x: hidden;
-    background-color: #09071d;
-    }
+  /* Game Page ends Here */
 
   /*----------------------------------------------------------------------------------------------------------------------*/
 
   /* CSS for Light Mode*/
     .mode { 
+        color:#fff;
     float:right; 
     } 
     .change { 
@@ -232,7 +212,7 @@ html{
     margin-left: 8px; 
     } 
     .container-fluid-light{ 
-    background-color: #3fc4f7; 
+    background-color: #fff; 
     color: #000; 
     }
 
@@ -247,7 +227,7 @@ html{
     }
 
     .home-banner-light{
-    background-image:url("../images/home-banner-light.jpg");  
+    background-image:url("../images/home-banner-light2.png");  
     background-repeat: no-repeat;
     background-size: auto;
   }
@@ -257,12 +237,44 @@ html{
     color: #000; 
     }
 
+    
 
-    .list-item{
-        border: 2px soild gold;
+    .header-light{
+        text-align: center;
+        margin: 15% 0% 15% 0%;
+        color: #000;
+    }   
+    
+    .subtitle-light{
+        font-size: 23px;
+        color: #000;
+    }
+
+    .footer-light{
+        background-color: #45ccff; 
+        color: #e6e6e6;
+    }
+
+    .card-light,.list-group-item-light{
+        color: white;
+        background-color: rgb(69,204,255);
+        transition: all 0.5s ease;
+    }
+
+    .list-group-item-light{
+        color: white;
+        background-color: rgb(69,204,255);
+        transition: all 0.5s ease;
+    }
+
+    .see-more-rec-light{
+        float: right;
+        background-color:#45ccff;
         padding: 10px;
+        font-size: 25px;
+        border: 2px solid black;
+        color: white;
+        margin-bottom: 17px;
     }
 
-    h3,h4{
-        display:none;
-    }
+   
