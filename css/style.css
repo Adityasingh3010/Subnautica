@@ -1,0 +1,294 @@
+/* Navbar Start */
+.image-logo{
+    width:100px;
+}
+
+.navbar{
+    background-color: #09071d;
+}
+
+.nav-lin{
+    color:#fff;
+    font-size:20px;
+    padding: 33px 20px 0px 9px;
+}
+
+.nav-lin:hover{
+    color:#fff
+}
+
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #174f65a3;
+}
+
+.icon{
+    color: #0e2835;
+    background-color: #fff;
+}
+
+.image-logo{
+    width:100px;
+}
+/* Navbar End */
+
+/* Home Page starts */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2155;
+}
+
+.banner-home{
+    padding: 87px 6px 190px 6px;
+}
+
+
+.header{
+    text-align: center;
+    margin: 15% 0% 15% 0%;
+    color: #fff;
+}
+
+.subtitle{
+    font-size: 23px;
+    color: #fff;
+}
+
+
+.gaming-img{
+    display: block;
+    width: 100%;
+}
+
+.see-more-rec,#xplore{
+    font-size: 25px;
+    border: 2px solid black;
+    color: white;
+}
+
+#xplore:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/* Recommended games */
+.games-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card,.list-group-item{
+    color: white;
+    background-color: rgb(29, 26, 41);
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    box-shadow: 0 0 5px 2px rgb(15, 183, 235);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.game{
+    margin-bottom: 12px;
+}
+
+.head-recommend{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.see-more-rec{
+    float: right;
+    background-color:#273367;
+    padding: 10px;
+    font-size: 25px;
+    border: 2px solid black;
+    color: white;
+}
+/* Home Page Ends */
+
+/* Game page starts here */
+
+.game-page{
+    background-image:url('../images/game-backgnd.jpg');
+    padding-top: 43px;
+
+}
+
+/*Flipcard starts here*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; 
+    padding: 0px 0px 0px 8px;
+  }
+  
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius:4px;
+  }
+  
+
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .card-head-game{
+      position:absolute;
+      top:85%;
+      left:30px;
+      color:#fff
+  }
+  /*Flipcard ends here*/
+  /* Game Page ends Here */
+
+  .game-form{
+    display:none;
+    margin-top: 100px;
+    }
+
+    .game-form .game-name{
+        margin: 12px 0px 25px 0px;
+    }
+
+#error-log{
+    display: none;
+    text-align: center;
+    }
+
+.btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    }
+
+.user-cart{
+    margin-top: 100px;
+    height: 100vh;
+
+}
+
+.user-reciept{
+    display: none;
+    }
+
+  /*----------------------------------------------------------------------------------------------------------------------*/
+
+  /* CSS for Light Mode*/
+    .mode { 
+    float:right; 
+    } 
+    .change { 
+    cursor: pointer; 
+    border: 1px solid #555; 
+    border-radius: 40%; 
+    width: 20px; 
+    text-align: center; 
+    padding: 5px; 
+    margin-left: 8px; 
+    } 
+    .container-fluid-light{ 
+    background-color: #3fc4f7; 
+    color: #000; 
+    }
+
+    .light-navbar{ 
+    background-color: #45ccff; 
+    color: #e6e6e6; 
+    }
+
+    .home-banner-dark{
+    background-image:url("../images/home-banner-dark1.png");
+    background-repeat: no-repeat;
+    }
+
+    .home-banner-light{
+    background-image:url("../images/home-banner-light.jpg");  
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .game-page-light{ 
+    background-image:url("../images/game6.jpg"); 
+    color: #000; 
+    }
+
+
+    .list-item{
+        border: 2px soild gold;
+        padding: 10px;
+    }
+
+    h3,h4{
+        display:none;
+    }
+
+    .list-reciept,.dummy,.list-group-item{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        color: black;
+        margin: 12px;
+        font-size: 24px;
+        display:none;
+        width: 100%;
+    }
+
+    .dummy{
+        display: none;
+
+    }
+
+    .empty-cart,.cart-head{
+        text-align: center;
+        margin: 22px 0px 32px 0px;
+    }
+    
+    .btn-outline-success{
+        color:black;
+        float: right;
+        margin-right: 12px;
+    }
