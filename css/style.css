@@ -207,6 +207,15 @@ html{
     display: none;
     }
 
+.footer {
+        text-align: center;
+        width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        overflow-x: hidden;
+    background-color: #09071d;
+    }
+
   /*----------------------------------------------------------------------------------------------------------------------*/
 
   /* CSS for Light Mode*/
