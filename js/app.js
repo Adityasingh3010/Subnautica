@@ -24,7 +24,7 @@ let players=[];
 let price=[];
 reciept=document.querySelector('.user-reciept');
 
-
+var amt=document.getElementById('amt');
 
 // event listeners
 
@@ -41,6 +41,7 @@ addEventListener('click',(event)=>{
         document.querySelector('.game-form').style="display:block";
         display_game.innerHTML=game_name;
         cost.innerHTML=amount;
+        console.log(amount);
     }
 })
 
@@ -62,41 +63,49 @@ my_form.addEventListener('click',(event)=>{
 
         // details to be added to cart 
         user=FullNameField.value;
-        title=document.querySelector('.game-name').innerHTML;
+        // title=document.querySelector('.game-name').innerHTML;
         numberofplayer=document.getElementById('exampleFormControlSelect1').value;
         timeslot=document.getElementById('exampleFormControlSelect2').value;
 
         // add to cart
-        var list = document.createElement("div");
-        list.classList.add('list-item');
-        const cart=document.getElementsByClassName('user-games');
-        var details = document.createTextNode(title+" "+numberofplayer+" "+timeslot);
-        list.appendChild(details);
-        cart[0].appendChild(list);
+
+        //create main li;
+        document.querySelector('.dummy').style='display:flex;'
+        var original = document.getElementById('list');
+        var clone = original.cloneNode(true);
+        clone.style="display:flex;"
+        clone.children[0].innerHTML=game_name;
+        clone.children[1].innerHTML=numberofplayer;
+        clone.children[2].innerHTML=timeslot;
+        original.parentNode.appendChild(clone);
+
 
         //push details in an auxilary array:
         games_bought.push(document.querySelector('.game-name').innerHTML);
         time_slots.push(timeslot);
         players.push(numberofplayer);
-        price.push(cost.innerHTML);
+        price.push(amount);
     }
 })
 
 
 //when generate reciept is triggered:
-
+var sum=0;
 
 reciept_btn.addEventListener('click',(event)=>{
     reciept.style='display:block';
     for(var i=0;i<games_bought.length;i++){
-        var list = document.createElement("li");
-        const userbooking=document.getElementsByClassName('bookings');
-        console.log(games_bought)
-        var details = document.createTextNode(games_bought[i]+" "+numberofplayer+" "+timeslot+" "+price[i]);
-        list.appendChild(details);
-        userbooking[0].appendChild(list);
-
+        var original = document.getElementById('list-r');
+        var clone = original.cloneNode(true);
+        clone.style="display:flex;"
+        clone.children[0].innerHTML=game_name;
+        clone.children[1].innerHTML=numberofplayer;
+        clone.children[2].innerHTML=timeslot;
+        original.parentNode.appendChild(clone);
+        var res=price[i].split(" ");
+        sum=sum+parseInt(res[1]);
     }
+    amt.innerHTML=sum;
     reciept_btn.style='display:none';
     games_bought=[]
     time_slots=[]
