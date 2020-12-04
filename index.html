@@ -56,7 +56,7 @@
               <a class="nav-lin" href="Games.html">Games</a>
             </li>
             <li class="nav-item">
-              <a class="nav-lin" href="#">About Us</a>
+              <a class="nav-lin" href="about.html">About Us</a>
             </li>
           </ul>
           <div id="google_translate_element"></div>
@@ -190,24 +190,26 @@
             </div>
             </div>
             <button class="see-more-rec"><a href="Games.html">See More</a></button>
-            <br>
         </div>
     </div>
 </div>
 <!--Recommended Games end-->
 </div>
 </div>
-    <!-- Landing page ends -->
- <!--Footer Starts here-->
+
+
+    <!--Footer Starts here-->
     <div class="footer">
         <div class="footer-contain">
           <a class="f justify-content-center" href="https://www.facebook.com/"><i class="social-icon fab fa-facebook-f fa-1x"></i></a>
          <a class="t justify-content-center" href="https://www.twitter.com/"><i class="social-icon fab fa-twitter fa-1x"></i></a>
          <a class="i justify-content-center" href="https://www.instagram.com/"><i class="social-icon fab fa-instagram fa-1x"></i></a>
          <a class="y justify-content-center" href="https://www.youtube.com/"><i class="social-icon fab fa-youtube fa-1x"></i></a> 
+         <p>COPYRIGHT TO TEAM SPARROW</p>
       </div>
       </div>
-<!--Foooter Ends here-->
+
+      <!-- Landing page ends -->
 </body>
 <script src="./js/search.js"></script>
 <script> 
@@ -215,15 +217,27 @@
         if( $( ".container-fluid" ).hasClass( "container-fluid-light" )) { 
             $( ".container-fluid" ).removeClass( "container-fluid-light" );
             $( ".home-banner-dark" ).removeClass( "home-banner-light" );
-            $( ".navbar" ).removeClass( "light-navbar" );  
+            $( ".navbar" ).removeClass( "light-navbar" ); 
+            $( ".header" ).removeClass( "header-light" ); 
+            $( ".subtitle" ).removeClass( "subtitle-light" );
+            $( ".footer" ).removeClass( "footer-light" );
+            $( ".list-group-item" ).removeClass( "list-group-item-light" );
+            $( ".see-more-rec" ).removeClass( "see-more-rec-light" );
+            $( ".card-light" ).removeClass( "card-light" );
+
         
             $( ".change" ).text( "OFF" ); 
         } else { 
             $( ".container-fluid" ).addClass( "container-fluid-light" ); 
             $( ".navbar" ).addClass( "light-navbar" );
             $( ".home-banner-dark" ).addClass( "home-banner-light" ); 
+            $( ".header" ).addClass( "header-light" );
+            $( ".subtitle" ).addClass( "subtitle-light" );
+            $( ".footer" ).addClass( "footer-light" );
+            $( ".card" ).addClass( "card-light" );
+            $( ".list-group-item" ).addClass( "list-group-item-light" );
+            $( ".see-more-rec" ).addClass( "see-more-rec-light" );
             $( ".change" ).text( "ON" );
-
         } 
     }); 
 </script>
